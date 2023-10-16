@@ -33,16 +33,16 @@ FROM nomes;
 -- A)
 CREATE TABLE produtos (
 	produto VARCHAR(100),
-    preco DECIMAL(10, 2),
+    preco FLOAT,
     quantidade INT
 );
 
 INSERT INTO produtos VALUES
-('Air Fryer', 349.34, 40),
-('Bateria', 2501.16, 75),
-('Celular', 1280.26, 0),
-('Guitarra', 612.99, 120),
-('Mochila', 129.87, 150);
+('Air Fryer', 349.345, -40),
+('Bateria', 2501.164, 75),
+('Celular', 1280.263, 0),
+('Guitarra', 612.993, 120),
+('Mochila', 129.872, 150);
 
 -- B)
 SELECT produto, ROUND(preco, 2) AS arredondado FROM produtos;
